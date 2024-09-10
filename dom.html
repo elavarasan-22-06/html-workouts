@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+   <p id="sample"> </p>
+   <p id="sample1"> is a paragraph</p>
+   <script>
+   let element = document.getElementById("sample1")
+   document.getElementById("sample1").innerHTML= "this"+ element.innerHTML
+   </script>
+</body>
+</html>

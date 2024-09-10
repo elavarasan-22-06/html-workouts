@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function Student(name,rollno,age){
+      this.name = name
+      this.rollno = rollno
+      this.age = age
+    }
+    Student.prototype.section ="s"
+    const a1 = new Student("elasu",12116112,20)
+    console.log(a1);
+    console.log(a1.section)
+    function toggle(e){
+    console.log (e.target)
+     if (state){
+      e. target. value="OFF"
+      e. target .style ="background-color :red"
+      state=!state
+     } else{
+      e.target. value="ON"
+      e.target. style="background-color :green"
+      state=!state
+     }
+     console.log (state)
+  }
+
+
+</script>
+</html>

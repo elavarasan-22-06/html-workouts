@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box {
+         position: relative;
+         left :20px;
+         top:20px;
+         width:300px;
+         height:200px;
+         font-size: 20px;
+         font-weight: 900px;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: yellowgreen;
+         animation-name:boxcol;
+         animation-duration:5s ;
+        animation-delay: 2s;
+        animation-timing-function:ease-in ;
+        animation-iteration-count:infinite ;
+        animation-direction:normal ;
+    } 
+    @keyframes boxcol {
+        25%{
+            background-color: blueviolet;
+            left:500px ;
+            top:20px;
+
+        }
+         50%{
+            background-color: orange;
+            left: 500px;
+            top:500px;
+
+         }
+         75%{
+            background-color: yellowgreen;
+            left: 20px;
+            top:20px;
+         }
+         100%{
+            background-color: blue;
+            top:20px;
+            left: 500px;
+         }
+    }
+
+    
+
+</style>
+</head>
+<body>
+    <div class="box">
+        animation
+    </div>
+</body>
+ </html>

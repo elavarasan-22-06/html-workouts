@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border ="1">
+        <tr> 
+          <td>  <textarea oninput="textInput(event)"></textarea> </td>
+          <tr><td> <input id ="search-text" type="text" placeholder="search-txt"></td></tr>
+          <tr><td> <input id ="replace" type="text" placeholder="Replace-txt"></td></tr>
+        </tr>
+        <td>
+            <input type="buttion" value="Replace" onclick="Replace()">
+            <input type="buttion" value="Replace All" onclick="Replace()">
+            <input type="buttion" value="Uppercase" onclick="Replace()">
+            <input type="buttion" value="Lowercase" onclick="Replace()">
+        </td>
+
+    </table>
+</body>
+    <script>
+        function textInput(event){
+    document.getElementById("content").innerHTML = event.target.value
+        }
+
+        function toUppercase(){
+    let txt =document.getElementById("content").innerHTML
+    document.getElementById("content").innerHTML = txt.toUppercase()
+        }
+        function toLowercase(){
+    let txt =document.getElementById("content").innerHTML
+    document.getElementById("content").innerHTML = txt.toLowercase()
+        }
+        function replace(){
+            let searchtxt =document.getElementById("search-txt").value    
+            let Replacetxt =document.getElementById("replace-txt").value 
+            let txt =document.getElementById("content").innerHTML
+            let finaltxt =txt.replace()
+
+        }
+</script>
+</html>

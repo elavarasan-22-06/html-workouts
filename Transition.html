@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orange;
+            
+        }
+        .plane{
+          /* margin-top: 200px;*/ 
+           width: 300px;
+           /* margin-left: 200px; */
+          /* translate */
+         /* transform:translateX(500px);*/
+         /* transform:translateY(500px) */
+          transform :translate(600px, 500px);
+
+          /*rotate*/
+         /*transform: rotatreY (170deg);*/
+         /* trans form: rotate (150deg);*/
+         /*transform:rotate3d (1,1,2,270deg);*/
+          
+          /*scale  (zoom)/*
+         /* transform :scale(10,5); */
+
+
+        }
+        .plane:hover{
+            /* width :800px; */
+          /* transform: translateX(400px) translateY(400px) rotate(420deg) scale(5);*/
+             /* transition :width 5s ease-in-out;*/ 
+              
+            /* transform:rotate(240deg)scale(5); */
+             transition:transform 5s ease-in-out ;
+            
+            transition-delay:2s;
+
+            
+
+        }
+    </style>
+
+</head>
+<body>
+    <img src="spiderman-poster-removebg-preview.png" alt="" srcset="" class="plane">
+</body>
+</html>
